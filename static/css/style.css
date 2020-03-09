@@ -1,0 +1,188 @@
+@media screen and (min-width: 600px) {
+
+    body {
+        background-color: rgb(43, 42, 42);
+    }
+
+    .main-container {
+        display       : flex;
+        height        : 95vh;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+}
+
+.chart-container {
+    flex  : 4;
+    height: 100%;
+    margin: 0.5%
+}
+
+.side-area {
+    flex            : 1;
+    height          : 100%;
+    display         : flex;
+    flex-direction  : column;
+    margin          : 0.5%;
+    background-color: rgb(31, 31, 31);
+    color           : whitesmoke;
+}
+
+
+
+.creator {
+    flex            : 1;
+    margin          : 0.5%;
+    background-color: rgb(255, 208, 0);
+
+}
+
+
+.creator .name {
+    font-size  : 12px;
+    font-weight: bold;
+    color      : black;
+    padding: 2%;
+}
+
+
+.explanations {
+    flex          : 17;
+    margin        : 0.5%;
+    display       : flex;
+    flex-direction: column;
+}
+
+.test-container {
+    flex: 1;
+}
+
+.exp-text {
+    text-align  : justify;
+    text-justify: inter-word;
+    padding: 4%;
+    
+}
+
+
+.Ba-char {
+    display: flex;
+    margin : 2%;
+}
+
+.Ba-greet {
+    margin: 2%;
+    padding: 1%;
+    font-size: 20px;
+}
+
+
+.Ba-pic {
+    width : 100px;
+    height: auto;
+    margin: 1%;
+}
+
+/**
+ * Tabs
+ */
+.tabs {
+    display  : flex;
+    flex-wrap: wrap;
+    height   : 100%;
+}
+
+.tabs>label {
+    order       : 1;
+    display     : block;
+    padding     : 2px 8px 0 8px;
+    margin-right: 0px;
+    cursor      : pointer;
+    background  : rgb(255, 208, 0);
+    font-weight : bold;
+    font-size   : 14px;
+    transition  : background ease 0.2s;
+}
+
+.tabs .tab {
+    order     : 99;
+    flex-grow : 1;
+    width     : 100%;
+    display   : none;
+    padding   : 5px;
+    background: #fff;
+    height    : 95% !important;
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+    background: #fff;
+}
+
+.tabs>input[type="radio"]:checked+label+.tab {
+    display: block;
+}
+
+@media (max-width: 45em) {
+
+    .tabs .tab,
+    .tabs label {
+        order: initial;
+    }
+
+    .tabs label {
+        width       : 100%;
+        margin-right: 0;
+        margin-top  : 0.2rem;
+    }
+}
+
+.container2 {
+    height: 80% !important;
+    margin: auto;
+}
+
+.container1 .chart {
+    height    : 100px;
+    margin    : 0 0 0 0;
+    margin-top: 0%;
+
+}
+
+.container1 .chart .highcharts-yaxis-labels {
+    display: none;
+}
+
+.container1 .chart .highcharts-background {
+    fill: rgb(0, 0, 0, 0);
+}
+
+
+.highcharts-button-box {
+    fill: rgb(255, 208, 0);
+    opacity: 1;
+}
+
+.highcharts-area {
+    z-index: 30 !important;
+}
+
+.test-page {
+    width: 50px;
+    height: 25px;
+    background-color: rgb(255, 208, 0);
+    color: black;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+}
+
+.test-page a {
+    text-decoration: none;
+}
+
+

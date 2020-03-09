@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    {% block title %}
+    Pretty data
+    {% endblock %}
+  </title>
+ 
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" >
+  
+  <script src="{{url_for('static' , filename='js/lib/highcharts/highcharts.js')}}"></script>
+  <script src="{{url_for('static' , filename='js/lib/highcharts/highcharts-more.js')}}"></script>
+
+  <script src="{{ url_for('static', filename='js/main.js')}}" type="module" defer></script>
+  <script src="{{ url_for('static', filename='js/lineCharObjecttMaker.js')}}" type="module"></script>
+  <script src="{{ url_for('static', filename='js/synchArrayOfObjectMaker.js')}}" type="module"></script>
+  
+  
+
+</head>
+
+<body id="page-body">
+
+  <div class="main-container">
+    <div class="side-area">
+      <div class="creator">
+        <p class="name">Demo by BaNazari</p>
+      </div>
+      <div class="explanations">
+        <div class="Ba-char">
+          <div>
+            <img class="Ba-pic" src="{{ url_for('static', filename='img/BaChar.png')}}">
+          </div>
+          <div class="Ba-greet">
+            <p>Hi, I am Ba! <br> I tell you about the charts.</p>
+          </div>
+        </div>
+        <div class="exp-text">
+          <p>
+            The data is presented as recorded amounts of daily walked distance for 9 healthy male persons in each day of the year. This is in fact based on a 
+            random generated CSV file, so there would not be a trend in data. This is the first seed for the visualization tool which I am developing. More parts 
+            and features will be added gradually.</p></br>
+            <p>You can:</p>
+            <ul>
+              <li>Turn the charts in "Line chart" on or off by clicking the names on the legend part. </li>
+              <li>Zoom in both charts by draggin your mouse horizontally on charts.</li>
+            </ul>
+
+          </p>
+        </div>
+      </div>
+      <div class="test-page">
+        <a href="{{url_for('static', filename='js/jasmine/SpecRunner.html')}}">test</a>
+      </div>
+
+    </div>
+
+    <div class="chart-container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </div>
+
+</body>
+
+</html>

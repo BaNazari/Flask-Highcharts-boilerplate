@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% block content %}
+ 
+<!-- <div id="container1">charts here</div> -->
+<div class="tabs">
+
+        <input type="radio" name="tabs" id="chart2">
+        <label for="chart2">Line chart</label>
+        <div class="tab">
+            <div id="container2" class="container2"></div>
+        </div>
+        <input type="radio" name="tabs" id="chart1" checked="checked">
+        <label for="chart1">Synchronized chart</label>
+        <div class="tab">
+            <div id="container1" class="container1"></div>
+        </div>
+        
+    </div>
+
+{% endblock %}
