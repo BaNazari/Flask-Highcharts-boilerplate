@@ -1,6 +1,8 @@
 
-# data-prettifier
-This is a tool for making interactive data visualizations, and it will grow up.
+#Flask-Highcharts-boilerplate
+This is a minimal boilerplate for data visualization projects. In this boilerplate, I have used Flask as a simple backend to serve the CSV file as a data source, Highcharts as a data visualization library, and Jasmine as a unit test tool. The purpose is to provide a handy and easy way to use these chain of tools in making charts of data. As you can see from the code, Highcharts is very powerful for visualizing the data of any shape and structure.
+
+
 For running the project please:
 
 1. Install Python3 and its cli on your machine.
